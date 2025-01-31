@@ -45,15 +45,15 @@ def phoneNumberLocationTracker():
 
 
     from phonenumbers import geocoder
-    ch_number = phonenumbers.parse(target_nmber, "DE")
+    ch_number = phonenumbers.parse(target_nmber, "en")
     from phonenumbers import carrier
-    service_number = phonenumbers.parse(target_nmber, "de")
+    service_number = phonenumbers.parse(target_nmber, "en")
     from phonenumbers import timezone
-    gb_number = phonenumbers.parse(target_nmber, "de")
+    gb_number = phonenumbers.parse(target_nmber, "en")
 
     print()
-    print(f"{Fore.WHITE}[{Fore.LIGHTRED_EX}*{Fore.WHITE}] COUNTRY             :    {Fore.LIGHTMAGENTA_EX}", geocoder.description_for_number(ch_number, "de"))
-    print(f"{Fore.WHITE}[{Fore.LIGHTRED_EX}*{Fore.WHITE}] INTERNET-PROVIDER   :    {Fore.LIGHTMAGENTA_EX}", carrier.name_for_number(service_number, "de"))
+    print(f"{Fore.WHITE}[{Fore.LIGHTRED_EX}*{Fore.WHITE}] COUNTRY             :    {Fore.LIGHTMAGENTA_EX}", geocoder.description_for_number(ch_number, "en"))
+    print(f"{Fore.WHITE}[{Fore.LIGHTRED_EX}*{Fore.WHITE}] INTERNET-PROVIDER   :    {Fore.LIGHTMAGENTA_EX}", carrier.name_for_number(service_number, "en"))
     print(f"{Fore.WHITE}[{Fore.LIGHTRED_EX}*{Fore.WHITE}] TIMEZONE            :    {Fore.LIGHTMAGENTA_EX}", timezone.time_zones_for_number(gb_number))
     print()
     time.sleep(3)

@@ -14,7 +14,9 @@ import phonenumbers
 import colorama
 from colorama import Fore
 import time
+import ctypes
 
+ctypes.windll.kernel32.SetConsoleTitleW("github.com/sgtfettsack")
 
 print(Fore.LIGHTRED_EX + rf"""
                                         
@@ -53,7 +55,7 @@ def phoneNumberLocationTracker():
     print(f"{Fore.WHITE}[{Fore.LIGHTRED_EX}*{Fore.WHITE}] COUNTRY             :    {Fore.LIGHTMAGENTA_EX}", geocoder.description_for_number(ch_number, "de"))
     print(f"{Fore.WHITE}[{Fore.LIGHTRED_EX}*{Fore.WHITE}] INTERNET-PROVIDER   :    {Fore.LIGHTMAGENTA_EX}", carrier.name_for_number(service_number, "de"))
     print(f"{Fore.WHITE}[{Fore.LIGHTRED_EX}*{Fore.WHITE}] TIMEZONE            :    {Fore.LIGHTMAGENTA_EX}", timezone.time_zones_for_number(gb_number))
-
+    print()
     time.sleep(3)
     phoneNumberLocationTracker()
 

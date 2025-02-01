@@ -1,15 +1,3 @@
-# discord.gg/Ca2XZwhqs8
-# discord.gg/Ca2XZwhqs8
-# discord.gg/Ca2XZwhqs8
-# discord.gg/Ca2XZwhqs8
-# discord.gg/Ca2XZwhqs8
-# discord.gg/Ca2XZwhqs8
-# discord.gg/Ca2XZwhqs8
-# discord.gg/Ca2XZwhqs8
-
-
-
-
 import phonenumbers
 import colorama
 from colorama import Fore
